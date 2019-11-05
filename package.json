@@ -1,30 +1,30 @@
 {
   "name": "react-native-acpmobileservices",
-  "title": "React Native Acpmobileservices",
   "version": "1.0.0",
-  "description": "TODO",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Adobe Experience Platform support for React Native apps.",
+  "main": "./js/index.js",
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-acpmobileservices.git",
-    "baseUrl": "https://github.com/github_account/react-native-acpmobileservices"
+    "url": "https://github.com/Foursum/react-native-acpmobileservices"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "adobe",
+    "mobile services",
+    "mobileservices",
+    "adobe experience platform",
+    "ios",
+    "android"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
+    "name": "Foursum Golf Inc."
   },
   "license": "MIT",
-  "licenseFilename": "LICENSE",
-  "readmeFilename": "README.md",
   "peerDependencies": {
     "react": "^16.8.1",
-    "react-native": ">=0.59.0-rc.0 <1.0.x"
+    "react-native": ">=0.59.0-rc.0 <1.0.x",
+    "@adobe/react-native-acpcore": ">=1.0.0"
   },
   "devDependencies": {
     "react": "^16.8.3",

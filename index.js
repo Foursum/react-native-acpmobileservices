@@ -1,5 +1,2 @@
-import { NativeModules } from 'react-native';
-
-const { Acpmobileservices } = NativeModules;
-
-export default Acpmobileservices;
+import ACPMobileServices from './js/ACPMobileServices';
+export default ACPMobileServices;

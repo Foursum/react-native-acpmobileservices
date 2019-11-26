@@ -21,8 +21,8 @@
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainApplication.java`
-  - Add `import com.foursum.react.ACPMobileServicesPackage;` to the imports at the top of the file
-  - Add `new ACPMobileServicesPackage()` to the list returned by the `getPackages()` method
+  - Add `import com.foursum.reactnative.RCTACPMobileServicesPackage;` to the imports at the top of the file
+  - Add `new RCTACPMobileServicesPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
   	include ':react-native-acpmobileservices'
@@ -30,7 +30,7 @@
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-acpmobileservices')
+      implementation project(':react-native-acpmobileservices')
   	```
 
 

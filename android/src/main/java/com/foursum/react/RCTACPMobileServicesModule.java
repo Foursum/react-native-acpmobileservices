@@ -1,4 +1,4 @@
-package com.foursum.react;
+package com.foursum.reactnative;
 
 import com.adobe.marketing.mobileservices.*;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -6,11 +6,11 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Promise;
 
-public class ACPMobileServicesModule extends ReactContextBaseJavaModule {
+public class RCTACPMobileServicesModule extends ReactContextBaseJavaModule {
 
     private final ReactApplicationContext reactContext;
 
-    public ACPMobileServicesModule(ReactApplicationContext reactContext) {
+    public RCTACPMobileServicesModule(ReactApplicationContext reactContext) {
         super(reactContext);
         this.reactContext = reactContext;
     }

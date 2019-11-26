@@ -1,4 +1,4 @@
-package com.foursum.react;
+package com.foursum.reactnative;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -10,10 +10,10 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.bridge.JavaScriptModule;
 
-public class ACPMobileServicesPackage implements ReactPackage {
+public class RCTACPMobileServicesPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-        return Arrays.<NativeModule>asList(new ACPMobileServicesModule(reactContext));
+        return Arrays.<NativeModule>asList(new RCTACPMobileServicesModule(reactContext));
     }
 
     @Override

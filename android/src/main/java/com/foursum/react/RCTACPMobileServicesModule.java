@@ -26,7 +26,7 @@ public class RCTACPMobileServicesModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void extensionVersion(final Promise promise) {
-        promise.resolve(MobileServices.extensionVersion());
+        promise.resolve("1.0.1");
     }
 
     @ReactMethod

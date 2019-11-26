@@ -1,6 +1,10 @@
 package com.foursum.reactnative;
 
-import com.adobe.marketing.mobileservices.*;
+import android.util.Log;
+import android.net.Uri;
+
+import com.adobe.marketing.mobile.InvalidInitException;
+import com.adobe.marketing.mobile.MobileServices;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
@@ -35,7 +39,8 @@ public class RCTACPMobileServicesModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void trackDeepLink(final Uri uri) {
+    public void trackDeepLink(final string deepLinkURL) {
+        Uri uri = Uri.parse(deepLinkURL);
         MobileServices.trackAdobeDeepLink(uri);
     }
 }

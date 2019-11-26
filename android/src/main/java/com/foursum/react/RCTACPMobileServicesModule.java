@@ -2,6 +2,7 @@ package com.foursum.reactnative;
 
 import android.util.Log;
 import android.net.Uri;
+import java.lang.Exception;
 
 import com.adobe.marketing.mobile.InvalidInitException;
 import com.adobe.marketing.mobile.MobileServices;
@@ -33,7 +34,7 @@ public class RCTACPMobileServicesModule extends ReactContextBaseJavaModule {
     public void registerExtension() {
         try {
             MobileServices.registerExtension();
-        } catch (InvalidInitException e) {
+        } catch (Exception e) {
             Log.d(getName(), "Registering Campaign extension failed with error: " + e.getMessage());
         }
     }

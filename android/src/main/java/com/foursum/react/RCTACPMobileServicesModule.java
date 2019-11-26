@@ -22,7 +22,7 @@ public class RCTACPMobileServicesModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return "ACPMobileServicesModule";
+        return "ACPMobileServices";
     }
 
     @ReactMethod

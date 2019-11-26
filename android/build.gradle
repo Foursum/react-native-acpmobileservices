@@ -63,6 +63,9 @@ dependencies {
     // https://github.com/facebook/react-native/blob/0.61-stable/template/android/app/build.gradle#L192
     //noinspection GradleDynamicVersion
     implementation 'com.facebook.react:react-native:+'  // From node_modules
+    // https://mvnrepository.com/artifact/com.adobe.marketing.mobile/mobileservices
+    api "com.adobe.marketing.mobile:mobileservices:1.0.1"
+
 }
 
 def configureReactNativePom(def pom) {
@@ -72,7 +75,7 @@ def configureReactNativePom(def pom) {
         name packageJson.title
         artifactId packageJson.name
         version = packageJson.version
-        group = "com.reactlibrary"
+        group = "com.foursum"
         description packageJson.description
         url packageJson.repository.baseUrl
 

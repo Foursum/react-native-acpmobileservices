@@ -39,7 +39,7 @@ public class RCTACPMobileServicesModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void trackDeepLink(final string deepLinkURL) {
+    public void trackDeepLink(final String deepLinkURL) {
         Uri uri = Uri.parse(deepLinkURL);
         MobileServices.trackAdobeDeepLink(uri);
     }
